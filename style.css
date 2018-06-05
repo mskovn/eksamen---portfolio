@@ -12,6 +12,11 @@ h1 {
     color: white;
 }
 
+h2 {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
 p {
     font-family: 'Raleway', sans-serif;
     color: white;
@@ -25,11 +30,18 @@ p {
     letter-spacing: 0.06em;
 }
 
+
+
 a {
     font-family: 'Raleway', sans-serif;
     font-size: 1.2em;
     text-decoration: none;
     color: darkgray;
+}
+
+div {
+    font-family: 'Raleway', sans-serif;
+    color: #292929;
 }
 
 /* Nav */
@@ -68,6 +80,9 @@ nav ul li {
     display: block;
 }
 
+a:hover {
+    text-decoration: underline;
+}
 
 /* Billeder */
 
@@ -80,4 +95,30 @@ img {
 #logo {
     width: 40px;
     height: 6px;
+}
+
+/* Bokse */
+
+#boks1 {
+    background-color: RGB(220, 242, 68)
+    }
+
+#boks2 {
+    background-color: RGB(159, 193, 50)
+    }
+
+#boks3 {
+    background-color: RGB(249, 167, 24)
+    }
+
+.color {
+    width: 8em;
+    padding: 2em;
+    border-radius: 25em;
+}
+
+.colors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
