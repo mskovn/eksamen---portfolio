@@ -51,6 +51,24 @@ nav ul li {
     padding-left: 2em;
 }
 
+.dropdown > ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.dropdown > ul li {
+    padding: 0 0.5em;
+}
+
+.dropdown:hover > ul {
+    display: block;
+}
+
+
 /* Billeder */
 
 img {
