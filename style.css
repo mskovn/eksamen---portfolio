@@ -101,15 +101,15 @@ img {
 
 #boks1 {
     background-color: RGB(220, 242, 68)
-    }
+}
 
 #boks2 {
     background-color: RGB(159, 193, 50)
-    }
+}
 
 #boks3 {
     background-color: RGB(249, 167, 24)
-    }
+}
 
 .color {
     width: 8em;
@@ -122,3 +122,5 @@ img {
     flex-direction: row;
     justify-content: space-between;
 }
+
+
