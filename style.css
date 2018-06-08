@@ -1,717 +1,728 @@
-/* Generelt */
-
-body {
-    background-color: #292929;
-    margin: 1.5em;
-}
-
-/* Tekst */
+ /* Generelt */
+
+ body {
+     background-color: #292929;
+     margin: 1.5em;
+ }
 
-h1 {
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    text-align: center;
-}
+ /* Tekst */
 
-h2 {
-    font-family: 'Raleway', sans-serif;
-    color: white;
-}
+ h1 {
+     font-family: 'Raleway', sans-serif;
+     color: white;
+     text-align: center;
+ }
+
+ h2 {
+     font-family: 'Raleway', sans-serif;
+     color: white;
+ }
 
-h3 {
-    font-family: 'Raleway', sans-serif;
-    color: white;
-}
-
-p {
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    letter-spacing: 0.04em;
-    line-height: 1.4em;
-    font-size: 0.8em;
-}
+ h3 {
+     font-family: 'Raleway', sans-serif;
+     color: white;
+ }
 
-.cv p {
-    line-height: 1.8em;
-    letter-spacing: 0.06em;
-}
-
-
-
-a {
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.8em;
-    text-decoration: none;
-    color: darkgray;
-}
-
-
-div {
-    font-family: 'Raleway', sans-serif;
-    color: #292929;
-}
+ p {
+     font-family: 'Raleway', sans-serif;
+     color: white;
+     letter-spacing: 0.04em;
+     line-height: 1.4em;
+     font-size: 0.8em;
+ }
 
-/* Nav */
-
-nav {
-    list-style-type: none;
-    background-color: white;
-    border-radius: 10px;
-    margin-bottom: 1.5em;
-    padding: 0.1em;
-    padding-top: 1em;
-}
-
-nav a {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    padding-bottom: 1em;
-    padding-right: 1em;
-}
-
-nav ul li {
-    padding-left: 2em;
-    list-style-type: none;
-}
+ .cv p {
+     line-height: 1.8em;
+     letter-spacing: 0.06em;
+ }
+
+
+
+ a {
+     font-family: 'Raleway', sans-serif;
+     font-size: 0.8em;
+     text-decoration: none;
+     color: darkgray;
+ }
+
+
+ div {
+     font-family: 'Raleway', sans-serif;
+     color: #292929;
+ }
+
+ /* Nav */
+
+ header {
+     background-color: white;
+     padding: 0.3em;
+ }
+
 
-.menupc {
-    display: none;
-}
+ nav ul {
+     display: flex;
+     list-style: none;
+     justify-content: space-between;
+ }
+
+ nav ul li {
+     position: relative;
+     padding-left: 4%;
+     padding-right: 4%;
+ }
+
+ .dropdown > ul {
+     display: none;
+     position: absolute;
+     background-color: white;
+     z-index: 1;
+     padding: 1em;
+     border-radius: 5px;
+ }
+
+ .dropdown > ul li {
+     padding: 0 0.5em;
+ }
+
+
+
+ .dropdown:hover > ul {
+     display: block;
+ }
 
-
-
-.dropdown > ul {
-    display: none;
-    background-color: white;
-    z-index: 1;
-    padding: 1em;
-    border-radius: 10px;
-
-}
-
-.dropdown > ul li {
-    padding: 0 0.5em;
-}
-
-.dropdown:hover > ul {
-    display: block;
-}
-
-a:hover {
-    text-decoration: underline;
-}
+ a:hover {
+     text-decoration: underline;
+ }
 
+ /* Billeder */
 
-/* Billeder */
+ img {
+     width: 100%;
+ }
 
-img {
-    width: 100%;
-}
+ /* Videoer*/
 
-/* Videoer*/
+ .video iframe {
+     position: absolute;
+     width: 100% !important;
+     height: 100% !important;
+ }
 
-.video iframe {
-    position: absolute;
-    width: 100% !important;
-    height: 100% !important;
-}
+ .video {
+     position: relative;
+     padding-bottom: 56.25%;
+     padding-top: 25px;
+     margin: 2em;
+     margin-bottom: 3em;
 
-.video {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    margin: 2em;
-    margin-bottom: 3em;
-
-}
-
-/* Logo */
-
-#logo {
-    width: 36px;
-    height: 37px;
-    position: absolute;
-    padding-left: 1.3em;
-}
-
-.logo2 {
-    background-color: white;
-    border-radius: 10px;
-}
-
-/* Bokse */
-
-#boks1 {
-    background-color: RGB(220, 242, 68)
-}
-
-#boks2 {
-    background-color: RGB(159, 193, 50)
-}
-
-#boks3 {
-    background-color: RGB(249, 167, 24)
-}
-
-.color {
-    width: 8em;
-    padding: 1em;
-    border-radius: 25em;
-}
-
-.colors {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-/* Forside */
-
-/*media queries*/
-
-@media screen and (min-width:700px) {
-
-    nav a {
-        display: inline-flex;
-        margin: 0.8em;
-    }
-
-    nav {
-        height: 63px;
-        width: 96.2%;
-        background-color: white;
-        text-align: right;
-        position: fixed;
-        top: 0;
-        z-index: 1;
-    }
-
-    .menumobil {
-        display: none;
-
-    }
-    .menupc {
-        display: block;
-
-    }
-
-    p {
-        font-size: 1em;
-    }
-
-    a {
-        font-size: 1em;
-    }
-
-    h1 {
-        margin-top: 4em;
-    }
-
-    #sectionwrapper {
-        display: flex;
-        flex-wrap: wrap;
-
-    }
-
-    .ommig {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .cv {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px
-    }
-
-    .web {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .moodboard1 {
-        flex-basis: 200px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-
-    .moodboard2 {
-        flex-basis: 200px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-    .layout {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .layoutmobil {
-        flex-basis: 400px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-
-    .layoutpc {
-        flex-basis: 400px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-    .something {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .skitse1 {
-        flex-basis: 200px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-
-    .splash1 {
-        flex-basis: 200px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-    .splash2 {
-        flex-basis: 200px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-
-    .splash3 {
-        flex-basis: 200px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-    .ikon {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .colors {
-        text-align: center;
-        flex-grow: 1;
-        margin: auto;
-        width: 700px;
-        padding-top: 2em;
-    }
-
-    .color {
-        width: 12em;
-        height: 7em;
-        border-radius: 10px;
-    }
-
-    #sectionwrapper2 {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-    }
-
-    .styletile1 {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .flat1 {
-        flex-basis: 200px;
-        flex-grow: 2;
-        margin: 2em
-    }
-
-
-    .flat2 {
-        flex-basis: 200px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-    .flat3 {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .content1 {
-        flex-grow: 1;
-        margin: auto;
-        width: 600px;
-    }
-
-    .animation1 {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .skitsea {
-        flex-basis: 200px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-
-    .skitseb {
-        flex-basis: 200px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-    .animation1 {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .spritefs {
-        flex-basis: 200px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-
-    .spritef {
-        flex-basis: 200px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-    .figur {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-    .ani {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .ux1 {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .xd1 {
-        flex-basis: 200px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-
-    .xd2 {
-        flex-basis: 200px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-    .egen {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .kontakt {
-        flex-basis: 400px;
-        flex-grow: 2;
-        margin-left: 8em;
-    }
-    .student {
-        flex-basis: 400px;
-        flex-grow: 2;
-    }
-}
-
-
-@media screen and (min-width: 1030px) {
-
-    nav a {
-        display: inline-flex;
-        margin: 0.8em;
-    }
-
-    nav {
-        height: 63px;
-        width: 96.2%;
-        background-color: white;
-        text-align: right;
-        position: fixed;
-        top: 0;
-        z-index: 1;
-    }
-
-    .menumobil {
-        display: none;
-
-    }
-    .menupc {
-        display: block;
-
-    }
-
-    p {
-        font-size: 1em;
-    }
-
-    a {
-        font-size: 1em;
-    }
-
-    h1 {
-        margin-top: 4em;
-    }
-
-    #sectionwrapper {
-        display: flex;
-        flex-wrap: wrap;
-
-    }
-
-    .ommig {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .uddannelse {
-        flex-basis: 400px;
-        flex-grow: 2;
-    }
-
-
-    .arbejde {
-        flex-basis: 400px;
-        flex-grow: 2;
-
-    }
-
-    .web {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .moodboard1 {
-        flex-basis: 400px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-
-    .moodboard2 {
-        flex-basis: 400px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-    .layout {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .layoutmobil {
-        flex-basis: 400px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-
-    .layoutpc {
-        flex-basis: 400px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-    .something {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .skitse1 {
-        flex-basis: 400px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-
-    .splash1 {
-        flex-basis: 400px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-    .splash2 {
-        flex-basis: 400px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-
-    .splash3 {
-        flex-basis: 400px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-    .ikon {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .colors {
-        text-align: center;
-        flex-grow: 1;
-        margin: auto;
-        width: 700px;
-        padding-top: 2em;
-    }
-
-    .color {
-        width: 12em;
-        height: 7em;
-        border-radius: 10px;
-    }
-
-    #sectionwrapper2 {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-    }
-
-    .styletile1 {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .flat1 {
-        flex-basis: 400px;
-        flex-grow: 2;
-        margin: 2em;
-        padding-left: 11em;
-    }
-
-
-    .flat2 {
-        flex-basis: 400px;
-        flex-grow: 2;
-        margin: 2em;
-        padding-right: 11em;
-    }
-
-    .flat3 {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .content1 {
-        flex-grow: 1;
-        margin: auto;
-        width: 600px;
-    }
-
-    .animation1 {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .skitsea {
-        flex-basis: 400px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-
-    .skitseb {
-        flex-basis: 400px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-    .animation1 {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .spritefs {
-        flex-basis: 400px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-
-    .spritef {
-        flex-basis: 400px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-    .figur {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-    .ani {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .ux1 {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .xd1 {
-        flex-basis: 400px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-
-    .xd2 {
-        flex-basis: 400px;
-        flex-grow: 2;
-        margin: 2em;
-    }
-
-    .egen {
-        flex-grow: 1;
-        margin: auto;
-        width: 500px;
-    }
-
-    .kontakt {
-        flex-basis: 400px;
-        flex-grow: 2;
-        margin-left: 8em;
-    }
-    .student {
-        flex-basis: 400px;
-        flex-grow: 2;
-        margin-right: 8em;
-    }
-}
+ }
+
+ /* Logo */
+
+ #logo {
+     display: block;
+     text-align: left;
+     width: 36px;
+     height: 37px;
+     position: absolute;
+     padding-left: 1.3em;
+ }
+
+ /* Bokse */
+
+ #boks1 {
+     background-color: RGB(220, 242, 68)
+ }
+
+ #boks2 {
+     background-color: RGB(159, 193, 50)
+ }
+
+ #boks3 {
+     background-color: RGB(249, 167, 24)
+ }
+
+ .color {
+     width: 8em;
+     padding: 1em;
+     border-radius: 25em;
+ }
+
+ .colors {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+
+ /*media queries*/
+
+ @media screen and (min-width:700px) {
+
+     nav {
+         height: 62px;
+         width: 100%;
+         background-color: white;
+         margin: 0px;
+         text-align: right;
+
+     }
+     nav a {
+         display: inline-flex;
+         margin: 0.8em;
+
+
+     }
+
+     header {
+         position: fixed;
+         top: 0;
+         display: flex;
+         background: white;
+         width: 96.45%;
+
+     }
+
+     header img {
+         display: block;
+         width: auto;
+         height: 100%;
+
+
+     }
+
+     p {
+         font-size: 1em;
+     }
+
+     a {
+         font-size: 1em;
+     }
+
+     h1 {
+         margin-top: 4em;
+     }
+
+     #logo img {
+         width: 39px;
+         height: auto;
+     }
+
+     #sectionwrapper {
+         display: flex;
+         flex-wrap: wrap;
+     }
+
+     .ommig {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .cv {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px
+     }
+
+     .web {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .moodboard1 {
+         flex-basis: 200px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+
+     .moodboard2 {
+         flex-basis: 200px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+     .layout {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .layoutmobil {
+         flex-basis: 400px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+
+     .layoutpc {
+         flex-basis: 400px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+     .something {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .skitse1 {
+         flex-basis: 200px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+
+     .splash1 {
+         flex-basis: 200px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+     .splash2 {
+         flex-basis: 200px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+
+     .splash3 {
+         flex-basis: 200px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+     .ikon {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .colors {
+         text-align: center;
+         flex-grow: 1;
+         margin: auto;
+         width: 700px;
+         padding-top: 2em;
+     }
+
+     .color {
+         width: 12em;
+         height: 7em;
+         border-radius: 10px;
+     }
+
+     #sectionwrapper2 {
+         display: flex;
+         flex-wrap: wrap;
+         text-align: center;
+     }
+
+     .styletile1 {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .flat1 {
+         flex-basis: 200px;
+         flex-grow: 2;
+         margin: 2em
+     }
+
+
+     .flat2 {
+         flex-basis: 200px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+     .flat3 {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .content1 {
+         flex-grow: 1;
+         margin: auto;
+         width: 600px;
+     }
+
+     .animation1 {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .skitsea {
+         flex-basis: 200px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+
+     .skitseb {
+         flex-basis: 200px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+     .animation1 {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .spritefs {
+         flex-basis: 200px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+
+     .spritef {
+         flex-basis: 200px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+     .figur {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+     .ani {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .ux1 {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .xd1 {
+         flex-basis: 200px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+
+     .xd2 {
+         flex-basis: 200px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+     .egen {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .kontakt {
+         flex-basis: 400px;
+         flex-grow: 2;
+         margin-left: 8em;
+     }
+     .student {
+         flex-basis: 400px;
+         flex-grow: 2;
+     }
+ }
+
+
+ @media screen and (min-width: 1030px) {
+
+     nav {
+         height: 62px;
+         width: 100%;
+         background-color: white;
+         text-align: right;
+
+     }
+     nav a {
+         display: inline-flex;
+         margin: 0.8em;
+
+
+     }
+
+     header {
+         position: fixed;
+         top: 0;
+         display: flex;
+         background: white;
+         width: 96.45%;
+
+     }
+
+     header img {
+         display: block;
+         width: auto;
+         height: 100%;
+
+
+     }
+
+     #logo img {
+         width: 39px;
+         height: auto;
+     }
+
+
+     p {
+         font-size: 1em;
+     }
+
+     a {
+         font-size: 1em;
+     }
+
+     h1 {
+         margin-top: 4em;
+     }
+
+     #sectionwrapper {
+         display: flex;
+         flex-wrap: wrap;
+
+     }
+
+     .ommig {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .uddannelse {
+         flex-basis: 400px;
+         flex-grow: 2;
+     }
+
+
+     .arbejde {
+         flex-basis: 400px;
+         flex-grow: 2;
+
+     }
+
+     .web {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .moodboard1 {
+         flex-basis: 400px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+
+     .moodboard2 {
+         flex-basis: 400px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+     .layout {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .layoutmobil {
+         flex-basis: 400px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+
+     .layoutpc {
+         flex-basis: 400px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+     .something {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .skitse1 {
+         flex-basis: 400px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+
+     .splash1 {
+         flex-basis: 400px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+     .splash2 {
+         flex-basis: 400px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+
+     .splash3 {
+         flex-basis: 400px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+     .ikon {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .colors {
+         text-align: center;
+         flex-grow: 1;
+         margin: auto;
+         width: 700px;
+         padding-top: 2em;
+     }
+
+     .color {
+         width: 12em;
+         height: 7em;
+         border-radius: 10px;
+     }
+
+     #sectionwrapper2 {
+         display: flex;
+         flex-wrap: wrap;
+         text-align: center;
+     }
+
+     .styletile1 {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .flat1 {
+         flex-basis: 400px;
+         flex-grow: 2;
+         margin: 2em;
+         padding-left: 11em;
+     }
+
+
+     .flat2 {
+         flex-basis: 400px;
+         flex-grow: 2;
+         margin: 2em;
+         padding-right: 11em;
+     }
+
+     .flat3 {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .content1 {
+         flex-grow: 1;
+         margin: auto;
+         width: 600px;
+     }
+
+     .animation1 {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .skitsea {
+         flex-basis: 400px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+
+     .skitseb {
+         flex-basis: 400px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+     .animation1 {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .spritefs {
+         flex-basis: 400px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+
+     .spritef {
+         flex-basis: 400px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+     .figur {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+     .ani {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .ux1 {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .xd1 {
+         flex-basis: 400px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+
+     .xd2 {
+         flex-basis: 400px;
+         flex-grow: 2;
+         margin: 2em;
+     }
+
+     .egen {
+         flex-grow: 1;
+         margin: auto;
+         width: 500px;
+     }
+
+     .kontakt {
+         flex-basis: 400px;
+         flex-grow: 2;
+         margin-left: 8em;
+     }
+     .student {
+         flex-basis: 400px;
+         flex-grow: 2;
+         margin-right: 8em;
+     }
+ }
