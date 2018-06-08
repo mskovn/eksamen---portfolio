@@ -170,7 +170,276 @@ img {
 
 /*media queries*/
 
-@media screen and (min-width:780px) {
+@media screen and (min-width:700px) {
+
+    nav a {
+        display: inline-flex;
+        margin: 0.8em;
+    }
+
+    nav {
+        height: 63px;
+        width: 96.2%;
+        background-color: white;
+        text-align: right;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
+
+    .menumobil {
+        display: none;
+
+    }
+    .menupc {
+        display: block;
+
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    a {
+        font-size: 1em;
+    }
+
+    h1 {
+        margin-top: 4em;
+    }
+
+    #sectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .ommig {
+        flex-grow: 1;
+        margin: auto;
+        width: 500px;
+    }
+
+    .cv {
+        flex-grow: 1;
+        margin: auto;
+        width: 500px
+    }
+
+    .web {
+        flex-grow: 1;
+        margin: auto;
+        width: 500px;
+    }
+
+    .moodboard1 {
+        flex-basis: 200px;
+        flex-grow: 2;
+        margin: 2em;
+    }
+
+
+    .moodboard2 {
+        flex-basis: 200px;
+        flex-grow: 2;
+        margin: 2em;
+    }
+
+    .layout {
+        flex-grow: 1;
+        margin: auto;
+        width: 500px;
+    }
+
+    .layoutmobil {
+        flex-basis: 400px;
+        flex-grow: 2;
+        margin: 2em;
+    }
+
+
+    .layoutpc {
+        flex-basis: 400px;
+        flex-grow: 2;
+        margin: 2em;
+    }
+
+    .something {
+        flex-grow: 1;
+        margin: auto;
+        width: 500px;
+    }
+
+    .skitse1 {
+        flex-basis: 200px;
+        flex-grow: 2;
+        margin: 2em;
+    }
+
+
+    .splash1 {
+        flex-basis: 200px;
+        flex-grow: 2;
+        margin: 2em;
+    }
+
+    .splash2 {
+        flex-basis: 200px;
+        flex-grow: 2;
+        margin: 2em;
+    }
+
+
+    .splash3 {
+        flex-basis: 200px;
+        flex-grow: 2;
+        margin: 2em;
+    }
+
+    .ikon {
+        flex-grow: 1;
+        margin: auto;
+        width: 500px;
+    }
+
+    .colors {
+        text-align: center;
+        flex-grow: 1;
+        margin: auto;
+        width: 700px;
+        padding-top: 2em;
+    }
+
+    .color {
+        width: 12em;
+        height: 7em;
+        border-radius: 10px;
+    }
+
+    #sectionwrapper2 {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .styletile1 {
+        flex-grow: 1;
+        margin: auto;
+        width: 500px;
+    }
+
+    .flat1 {
+        flex-basis: 200px;
+        flex-grow: 2;
+        margin: 2em
+    }
+
+
+    .flat2 {
+        flex-basis: 200px;
+        flex-grow: 2;
+        margin: 2em;
+    }
+
+    .flat3 {
+        flex-grow: 1;
+        margin: auto;
+        width: 500px;
+    }
+
+    .content1 {
+        flex-grow: 1;
+        margin: auto;
+        width: 600px;
+    }
+
+    .animation1 {
+        flex-grow: 1;
+        margin: auto;
+        width: 500px;
+    }
+
+    .skitsea {
+        flex-basis: 200px;
+        flex-grow: 2;
+        margin: 2em;
+    }
+
+
+    .skitseb {
+        flex-basis: 200px;
+        flex-grow: 2;
+        margin: 2em;
+    }
+
+    .animation1 {
+        flex-grow: 1;
+        margin: auto;
+        width: 500px;
+    }
+
+    .spritefs {
+        flex-basis: 200px;
+        flex-grow: 2;
+        margin: 2em;
+    }
+
+
+    .spritef {
+        flex-basis: 200px;
+        flex-grow: 2;
+        margin: 2em;
+    }
+
+    .figur {
+        flex-grow: 1;
+        margin: auto;
+        width: 500px;
+    }
+    .ani {
+        flex-grow: 1;
+        margin: auto;
+        width: 500px;
+    }
+
+    .ux1 {
+        flex-grow: 1;
+        margin: auto;
+        width: 500px;
+    }
+
+    .xd1 {
+        flex-basis: 200px;
+        flex-grow: 2;
+        margin: 2em;
+    }
+
+
+    .xd2 {
+        flex-basis: 200px;
+        flex-grow: 2;
+        margin: 2em;
+    }
+
+    .egen {
+        flex-grow: 1;
+        margin: auto;
+        width: 500px;
+    }
+
+    .kontakt {
+        flex-basis: 400px;
+        flex-grow: 2;
+        margin-left: 8em;
+    }
+    .student {
+        flex-basis: 400px;
+        flex-grow: 2;
+    }
+}
+
+
+@media screen and (min-width: 1030px) {
 
     nav a {
         display: inline-flex;
@@ -223,14 +492,13 @@ img {
     .uddannelse {
         flex-basis: 400px;
         flex-grow: 2;
-        margin-left: 7em;
     }
 
 
     .arbejde {
         flex-basis: 400px;
         flex-grow: 2;
-        margin-right: 7em;
+
     }
 
     .web {
@@ -323,6 +591,12 @@ img {
         border-radius: 10px;
     }
 
+    #sectionwrapper2 {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
     .styletile1 {
         flex-grow: 1;
         margin: auto;
@@ -333,6 +607,7 @@ img {
         flex-basis: 400px;
         flex-grow: 2;
         margin: 2em;
+        padding-left: 11em;
     }
 
 
@@ -340,6 +615,7 @@ img {
         flex-basis: 400px;
         flex-grow: 2;
         margin: 2em;
+        padding-right: 11em;
     }
 
     .flat3 {
