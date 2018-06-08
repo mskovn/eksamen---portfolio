@@ -62,7 +62,7 @@
  nav ul {
      display: flex;
      list-style: none;
-     justify-content: space-between;
+
  }
 
  nav ul li {
@@ -125,7 +125,7 @@
      width: 36px;
      height: 37px;
      position: absolute;
-     padding-left: 1.3em;
+     padding-left: 0.5em;
  }
 
  /* Bokse */
@@ -178,8 +178,7 @@
          top: 0;
          display: flex;
          background: white;
-         width: 96.45%;
-
+         width: 92.35%;
      }
 
      header img {
