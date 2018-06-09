@@ -11,29 +11,35 @@
      font-family: 'Raleway', sans-serif;
      color: white;
      text-align: center;
+     letter-spacing: 0.1em;
+     margin-top: 3em;
  }
 
  h2 {
      font-family: 'Raleway', sans-serif;
      color: white;
+     letter-spacing: 0.1em;
+     margin-top: 3em;
  }
 
  h3 {
      font-family: 'Raleway', sans-serif;
      color: white;
+     margin-top: 2.5em;
  }
 
  p {
      font-family: 'Raleway', sans-serif;
      color: white;
-     letter-spacing: 0.04em;
+     letter-spacing: 0.05em;
      line-height: 1.4em;
      font-size: 0.8em;
+     line-height: 1.5em;
  }
 
  .cv p {
      line-height: 1.8em;
-     letter-spacing: 0.06em;
+     letter-spacing: 0.1em;
  }
 
 
@@ -56,14 +62,19 @@
  header {
      background-color: white;
      padding: 0.3em;
+     z-index: 1;
+     border-radius: 10px;
  }
 
+ .current {
+     text-decoration: overline;
+ }
 
  nav ul {
      display: flex;
+     justify-content: flex-end;
+     flex-direction: row;
      list-style: none;
-     margin-top: 0.6em;
-
  }
 
  nav ul li {
@@ -78,7 +89,7 @@
      background-color: white;
      z-index: 1;
      padding: 1em;
-     border-radius: 5px;
+     border-radius: 10px;
  }
 
  .dropdown > ul li {
@@ -99,7 +110,24 @@
 
  img {
      width: 100%;
+     border-radius: 10px;
  }
+
+ #sectionwrapper1 img:hover {
+     transform: scale(1.5);
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .splash1 {
+     align-self: center;
+ }
+
+ .splash3 {
+     align-self: center;
+ }
+
 
  /* Videoer*/
 
@@ -107,6 +135,7 @@
      position: absolute;
      width: 100% !important;
      height: 100% !important;
+     border-radius: 10px;
  }
 
  .video {
@@ -116,6 +145,7 @@
      margin: 2em;
      margin-bottom: 3em;
 
+
  }
 
  /* Logo */
@@ -123,10 +153,21 @@
  #logo {
      display: block;
      text-align: left;
-     width: 36px;
-     height: 37px;
+     width: 30px;
+     height: 30px;
      position: absolute;
      padding-left: 0.5em;
+ }
+
+ #logo img {
+     margin: 0px;
+ }
+
+ /*ikoner*/
+
+ .fa:hover {
+     text-decoration: none;
+     transform: scale(1.5)
  }
 
  /* Bokse */
@@ -164,7 +205,7 @@
          width: 100%;
          background-color: white;
          margin: 0px;
-         text-align: right;
+         padding-right: 1em;
 
      }
      nav a {
@@ -407,15 +448,15 @@
      }
 
      .xd1 {
-         flex-basis: 200px;
-         flex-grow: 2;
+         flex-basis: 100px;
+         flex-grow: 6;
          margin: 2em;
      }
 
 
      .xd2 {
-         flex-basis: 200px;
-         flex-grow: 2;
+         flex-basis: 100px;
+         flex-grow: 6;
          margin: 2em;
      }
 
@@ -436,8 +477,17 @@
      }
  }
 
+ @media screen and (min-width:850px) {
+     header {
+         position: fixed;
+         top: 0;
+         display: flex;
+         background: white;
+         width: 93.3%;
+     }
+ }
 
- @media screen and (min-width: 1030px) {
+ @media screen and (min-width: 1020px) {
 
      nav {
          height: 62px;
@@ -458,8 +508,7 @@
          top: 0;
          display: flex;
          background: white;
-         width: 96.45%;
-
+         width: 94.5%;
      }
 
      header img {
@@ -615,7 +664,7 @@
      }
 
      .flat1 {
-         flex-basis: 400px;
+         flex-basis: 200px;
          flex-grow: 2;
          margin: 2em;
          padding-left: 11em;
@@ -623,7 +672,7 @@
 
 
      .flat2 {
-         flex-basis: 400px;
+         flex-basis: 200px;
          flex-grow: 2;
          margin: 2em;
          padding-right: 11em;
@@ -697,15 +746,15 @@
      }
 
      .xd1 {
-         flex-basis: 400px;
-         flex-grow: 2;
+         flex-basis: 100px;
+         flex-grow: 6;
          margin: 2em;
      }
 
 
      .xd2 {
-         flex-basis: 400px;
-         flex-grow: 2;
+         flex-basis: 100px;
+         flex-grow: 6;
          margin: 2em;
      }
 
@@ -724,5 +773,11 @@
          flex-basis: 400px;
          flex-grow: 2;
          margin-right: 8em;
+     }
+ }
+
+ @media screen and (min-width:1200px) {
+     header {
+         width: 95.9%;
      }
  }
